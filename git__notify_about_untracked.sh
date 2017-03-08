@@ -8,9 +8,10 @@
 # 2.0) every minute
 # */1 * * * * $HOME/scripts/git__notify_about_untracked.sh
 # 2.1) every hour
-# * */1 * * * $HOME/scripts/git__notify_about_untracked.sh
-# 2.2) every day
-# * * */1 * * $HOME/scripts/git__notify_about_untracked.sh
+#  0 * * * * $HOME/scripts/git__notify_about_untracked.sh
+#  @hourly $HOME/scripts/git__notify_about_untracked.sh
+# 2.2) every day at 7 AM
+# * 7 * * * $HOME/scripts/git__notify_about_untracked.sh
 
 
 # CONFIG 

@@ -9,9 +9,10 @@
 # 2.0) every minute
 # */1 * * * * $HOME/scripts/git__auto_commit__multi_repo.sh
 # 2.1) every hour
-# * */1 * * * $HOME/scripts/git__auto_commit__multi_repo.sh
-# 2.2) every day
-# * * */1 * * $HOME/scripts/git__auto_commit__multi_repo.sh
+#  0 * * * * $HOME/scripts/git__auto_commit__multi_repo.sh
+#  @hourly $HOME/scripts/git__auto_commit__multi_repo.sh
+# 2.2) every day at 7 AM
+# * 7 * * * $HOME/scripts/git__auto_commit__multi_repo.sh
 
 # Manual run from shell and send notify email:
 # $HOME/scripts/git__auto_commit__multi_repo.sh | mail -s "git__auto_commit__multi_repo" "cron@domen.ru"
