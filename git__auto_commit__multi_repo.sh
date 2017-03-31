@@ -54,7 +54,7 @@ do
     HAS_UNTRACKED=$(echo $GIT_STATUS | egrep "Untracked|deleted|modified")
 
         
-    if [ "$HAS_UNTRACKED" -ne "" ]; then
+    if [ "$HAS_UNTRACKED" != "" ]; then
        echo ""
        echo "Repo: "$REPO 
        echo ""
